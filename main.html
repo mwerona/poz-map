@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Map</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div class="map-container">
+            <img id="map" src="assets/map.png" alt="Map">
+        </div>
+        <div class="controls">
+            <form id="marker-form">
+                <label for="x">X Coordinate:</label>
+                <input type="number" id="x" name="x" min="0" max="513" required>
+                <label for="y">Y Coordinate:</label>
+                <input type="number" id="y" name="y" min="0" max="1023" required>
+                <label for="description">Description:</label>
+                <input type="text" id="description" name="description" required>
+                <button type="submit">Add Marker</button>
+            </form>
+            <div id="output"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
